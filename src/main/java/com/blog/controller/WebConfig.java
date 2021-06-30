@@ -1,4 +1,4 @@
-package com.blog.web;
+package com.blog.controller;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.blog.web")
+@ComponentScan("com.blog.controller")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
 

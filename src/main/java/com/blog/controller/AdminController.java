@@ -1,4 +1,4 @@
-package com.blog.web;
+package com.blog.controller;
 
 import com.blog.domain.Admin;
 import com.blog.domain.AdminLoginLog;
