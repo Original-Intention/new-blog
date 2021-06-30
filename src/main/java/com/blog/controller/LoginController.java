@@ -27,7 +27,6 @@ public class LoginController {
 
         return "admin/login";
 
-
     }
 
     // 0:用户不存在  1:密码错误 2:登陆成功

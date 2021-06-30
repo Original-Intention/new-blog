@@ -8,6 +8,7 @@ import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -20,6 +21,7 @@ public class IndexController {
     @Autowired
     public CommentServiceImpl commentService;
     @RequestMapping("/")
+    @ResponseBody
     public ModelAndView index(@RequestParam(required=true,defaultValue="1") Integer page, @RequestParam(required=false,defaultValue="5") Integer pageSize){
         ModelAndView modelAndView =new ModelAndView("index");
         PageHelper.startPage(page, pageSize);

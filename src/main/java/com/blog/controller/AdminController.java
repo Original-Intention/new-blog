@@ -8,6 +8,8 @@ import com.blog.service.impl.CommentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -19,7 +21,7 @@ import java.util.List;
  * @author zouwh
  * @date 2019-4-12 16:40:01
  */
-@Repository
+@RestController
 @RequestMapping("/admin")
 public class AdminController {
     @Autowired
@@ -64,5 +66,4 @@ public class AdminController {
             return modelAndView;
         }
     }
-
 }
