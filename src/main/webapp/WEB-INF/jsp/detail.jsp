@@ -10,10 +10,10 @@
 <head>
     <meta content=”text/html;charset=utf-8″>
     <title>Zou's Blog</title>
-    <link rel="shortcut icon" type="image/x-icon" href="<%=root %>/img/web-icon.png" media="screen" />
-    <link rel="stylesheet" href="<%=root %>/css/bootstrap.min.css">
-    <script src="<%=root %>/js/jquery-3.2.1.min.js"></script>
-    <script src="<%=root %>/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/web-icon.png" media="screen" />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
     <style>
 
         *{
@@ -73,8 +73,7 @@
         }/*去掉链接下划线*/
         #bg {
             position: relative;
-            background: url("/img/296494-106.jpg") no-repeat gray;
-            background-size: cover;
+            background: url("/static/images/296494-106.jpg");
         }/*设置背景图片*/
         #bg p {
             position: relative;

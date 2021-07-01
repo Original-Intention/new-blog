@@ -8,11 +8,12 @@ spring:
     view:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
+    static-path-pattern: /static/**
   datasource:
     url: jdbc:mysql://118.25.153.44:3306/blog?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2B8
     username: root
     password: 831015
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
 #    type: com.alibaba.druid.pool.DruidDataSource
 #    druid:
 #      #初始化大小
@@ -41,10 +42,19 @@ spring:
 #      # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
 #      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 
+    resources:
+      static-locations: classpath:/static/
+
 mybatis:
   # model的包
   type-aliases-package: com.blog.domain
   configLocations: classpath:mybatis/mybatis-config.xml
   mapperLocations: classpath:mybatis/mapper/*.xml
 
+#pagehelper分页插件
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
 

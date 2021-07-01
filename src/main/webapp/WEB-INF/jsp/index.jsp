@@ -11,10 +11,10 @@
 <head>
     <meta content=”text/html;charset=utf-8″>
     <title>Zou's Blog</title>
-    <link rel="shortcut icon" type="image/x-icon" href="<%=root %>/img/web-icon.png" media="screen" />
-    <link rel="stylesheet" href="<%=root %>/css/bootstrap.min.css">
-    <script src="<%=root %>/js/jquery-3.2.1.min.js"></script>
-    <script src="<%=root %>/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/web-icon.png" media="screen" />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
     <style>
 
         *{
@@ -74,8 +74,9 @@
         }/*去掉链接下划线*/
         #bg {
             position: relative;
-            background: url("img/296494-106.jpg") no-repeat gray;
-            background-size: cover;
+            background: url("/static/images/296494-106.jpg");
+            width: 100%;
+            height: 30%;
         }/*设置背景图片*/
         #bg p {
             position: relative;
@@ -102,171 +103,171 @@
         }/*设置第二行文字属性*/
         #header nav figure
         {
-            background:url("");
-            height: 50px;
-            width: 50px;
-            background-size:cover ;
+        /* background:url(""); */
+         height: 50px;
+         width: 50px;
+         background-size:cover ;
 
-        }
-        #header nav .my-info {
-            position: absolute;
-            top: 0px;
-            right: 0;
-        }
+     }
+     #header nav .my-info {
+         position: absolute;
+         top: 0px;
+         right: 0;
+     }
 
-        figure {
-            display: block;
-            -webkit-margin-before: 1em;
-            -webkit-margin-after: 1em;
-            -webkit-margin-start: 40px;
-            -webkit-margin-end: 40px;
-            border-radius:100px;
-        }
+     figure {
+         display: block;
+         -webkit-margin-before: 1em;
+         -webkit-margin-after: 1em;
+         -webkit-margin-start: 40px;
+         -webkit-margin-end: 40px;
+         border-radius:100px;
+     }
 
-        #left_table {
-            position: relative;
-            float: left;
-            margin-left:80px;
-            background-color: white;
-            box-sizing: border-box;
-            color: #555;
-            right: auto;
-            display: block;
-            bottom: auto;
-            padding-left: 50px;
-        }
+     #left_table {
+         position: relative;
+         float: left;
+         margin-left:80px;
+         background-color: white;
+         box-sizing: border-box;
+         color: #555;
+         right: auto;
+         display: block;
+         bottom: auto;
+         padding-left: 50px;
+     }
 
-        #mouse{
-            position: relative;
-            float: left;
-            margin-top:17px;
-            margin-left:80px;
-        }
-        #footer {
-            position: relative;
-            float: bottom;
-            height: 120px;
-            color: hsla(0,0%,100%,.69);
-            font-size: 12px;
-            text-align: center;
-            transition: height .1s 1s;
-        }
-        #copyright {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #999;
-            width: 100%;
-            height: 100%;
-            transform-origin: 100% 0;
-            transition: all .5s;
-            z-index: 2;
-        }
-        #copyright p {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            line-height: 2;
-        }
-        #header nav span {
-            font-size: 18px;
-            margin: 0 10px;
-        }
-        #header nav figure, #header nav span {
-            display: inline-block;
+     #mouse{
+         position: relative;
+         float: left;
+         margin-top:17px;
+         margin-left:80px;
+     }
+     #footer {
+         position: relative;
+         float: bottom;
+         height: 120px;
+         color: hsla(0,0%,100%,.69);
+         font-size: 12px;
+         text-align: center;
+         transition: height .1s 1s;
+     }
+     #copyright {
+         position: absolute;
+         top: 0;
+         left: 0;
+         background: #999;
+         width: 100%;
+         height: 100%;
+         transform-origin: 100% 0;
+         transition: all .5s;
+         z-index: 2;
+     }
+     #copyright p {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+         line-height: 2;
+     }
+     #header nav span {
+         font-size: 18px;
+         margin: 0 10px;
+     }
+     #header nav figure, #header nav span {
+         display: inline-block;
 
-            vertical-align: middle;
-        }
+         vertical-align: middle;
+     }
 
-        #hiddenewm p{
-            color: #444;
-        }
-        #hiddenewm
-        {
-            background: #fff;
-            text-align: center;
-            position: absolute;
-            left: 25px;
-            top: 70px;
-        }
-        #container {
-            position: relative;
-            width: 70%;
-            margin-left:330px;
+     #hiddenewm p{
+         color: #444;
+     }
+     #hiddenewm
+     {
+         background: #fff;
+         text-align: center;
+         position: absolute;
+         left: 25px;
+         top: 70px;
+     }
+     #container {
+         position: relative;
+         width: 70%;
+         margin-left:330px;
 
-        }
-        .article {
-            box-shadow: 5px 5px 25px #dadada;
-            position: relative;
-            padding: 0 20px;
-            margin: 40px auto;
-            max-width: 950px;
-            background: #fff;
-            text-align: center;
-        }
-        .article>time {
-            position: absolute;
-            top: 0;
-            left: 0;
-            border-bottom: 1px solid #ccc;
-            font-size: 14px;
-            padding: 4px 5px 0;
-            color: #999;
-        }
-        .article h2 {
-            padding-bottom: .5em;
-            font-size: 1.75em;
-            line-height: 1.225;
-        }
-        .article>h2 {
-            padding: 35px 0 45px;
-            font-size: 22px;
-            font-weight: 700;
-            cursor: pointer;
-        }
-        #container a {
-            color: #333;
-        }
-        .article>span {
-            position: absolute;
-            top: 0;
-            right: 0;
-            color: #999;
-            padding: 3px 10px;
-            background: #f1f1f1;
-            font-size: 14px;
-        }
-        .article section {
-            text-align: left;
-            padding: 10px;
-            font-size: 16px;
-        }
-        .article blockquote {
-            padding: 0 15px;
-            color: #777;
-            border-left: 4px solid #ddd;
-        }
-        .article footer {
-            padding: 25px 0 20px;
-        }
-        .article footer a {
-            display: inline-block;
-            color: #18bc9c;
-            cursor: pointer;
-            padding: 4px 20px;
-            border-radius: 5px;
-            transition: all .5s;
-            border: 1px solid #18bc9c;
-        }
-        #pagebar{
-            text-align: center;
-        }
+     }
+     .article {
+         box-shadow: 5px 5px 25px #dadada;
+         position: relative;
+         padding: 0 20px;
+         margin: 40px auto;
+         max-width: 950px;
+         background: #fff;
+         text-align: center;
+     }
+     .article>time {
+         position: absolute;
+         top: 0;
+         left: 0;
+         border-bottom: 1px solid #ccc;
+         font-size: 14px;
+         padding: 4px 5px 0;
+         color: #999;
+     }
+     .article h2 {
+         padding-bottom: .5em;
+         font-size: 1.75em;
+         line-height: 1.225;
+     }
+     .article>h2 {
+         padding: 35px 0 45px;
+         font-size: 22px;
+         font-weight: 700;
+         cursor: pointer;
+     }
+     #container a {
+         color: #333;
+     }
+     .article>span {
+         position: absolute;
+         top: 0;
+         right: 0;
+         color: #999;
+         padding: 3px 10px;
+         background: #f1f1f1;
+         font-size: 14px;
+     }
+     .article section {
+         text-align: left;
+         padding: 10px;
+         font-size: 16px;
+     }
+     .article blockquote {
+         padding: 0 15px;
+         color: #777;
+         border-left: 4px solid #ddd;
+     }
+     .article footer {
+         padding: 25px 0 20px;
+     }
+     .article footer a {
+         display: inline-block;
+         color: #18bc9c;
+         cursor: pointer;
+         padding: 4px 20px;
+         border-radius: 5px;
+         transition: all .5s;
+         border: 1px solid #18bc9c;
+     }
+     #pagebar{
+         text-align: center;
+     }
 
 
-    </style>
+</style>
 </head>
-<body background="img/bg.png" >
+<body background="/static/images/bg.png" >
 
 <div>
     <header id="header">
@@ -277,19 +278,19 @@
                     <a href="<%=root %>/about">关于</a>
                 </li>
             </ul>
-            <div class="my-info" onmouseover="hiddeewm()" onmouseout="hiddeewm()">
+            <div class="my-info">
                 <ul>
                     <li>
                         <a href="https://github.com/Original-Intention">
-                            <img style="width:30px;height: 30px" src="<%=root %>/static/images/github.png">
+                            <img style="width:30px;height: 30px" src="/static/images/github.png">
                         </a>
                         <a href="<%=root %>/about">
-                            <img style="width:35px;height: 40px" src="<%=root %>/static/images/email.png">
+                            <img style="width:35px;height: 40px" src="/static/images/email.png">
                         </a>
                     </li>
                 </ul>
                 <div id="hiddenewm" hidden="true" >
-                    <img src="img/me.jpg" width="200px" height="200px" >
+                    <img src="/static/images/me.jpg" width="200px" height="200px" >
                     <p></p>
                 </div>
             </div>
@@ -353,12 +354,12 @@
                 2.首页，末页的逻辑：pn=1访问第一次，pn=${pageInfo.pages}访问最后一页
               -->
                 <li>
-                    <a href="${pageContext.request.contextPath}/index?pageNumber=1">首页</a>
+                    <a href="${pageContext.request.contextPath}/index?page=1">首页</a>
                 </li>
                 <!-- 如果还有前页就访问当前页码-1的页面， -->
                 <c:if test="${pageInfo.hasPreviousPage}">
                     <li>
-                        <a href="${pageContext.request.contextPath}/index?pageNumber=${pageInfo.pageNum-1}" aria-label="Previous">
+                        <a href="${pageContext.request.contextPath}/index?page=${pageInfo.pageNum-1}" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                         </a>
                     </li>
@@ -370,24 +371,24 @@
                 <li class="active"><a href="#">${page_Nums}</a></li>
                 </c:if>
                 <c:if test="${page_Nums!=pageInfo.pageNum }">
-                    <li ><a href="${pageContext.request.contextPath}/index?pageNumber=${page_Nums}">${page_Nums}</a></li>
+                    <li ><a href="${pageContext.request.contextPath}/index?page=${page_Nums}">${page_Nums}</a></li>
                 </c:if>
                 </c:forEach>
                 </li>
                 <!-- 如果还有后页就访问当前页码+1的页面， -->
                 <c:if test="${pageInfo.hasNextPage}">
                     <li>
-                        <a href="${pageContext.request.contextPath}/index?pageNumber=${pageInfo.pageNum+1}" aria-label="Next">
+                        <a href="${pageContext.request.contextPath}/index?page=${pageInfo.pageNum+1}" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                         </a>
                     </li>
                 </c:if>
-                <li><a href="${pageContext.request.contextPath}/index?pageNumber=${pageInfo.pages}">末页</a></li>
+                <li><a href="${pageContext.request.contextPath}/index?page=${pageInfo.pages}">末页</a></li>
             </ul>
         </div>
     </div>
 </div>
-<script src="<%=root %>/js/jquery-3.2.1.min.js"></script>
+<script src="/static/js/jquery-3.2.1.min.js"></script>
 <script>
     // 将特殊效果更新至主页中
     /**
